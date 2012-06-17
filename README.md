@@ -1,6 +1,14 @@
-# Schedule::Scraper
+# ScheduleScraper
 
-TODO: Write a gem description
+A web calendar scraper for sites that do not provid portable (csv, i-cal etc) version.
+
+Supported schedule sites:
+
+* [PointStreak](http://pointstreak.com)
+
+Supported output formats:
+
+* CSV
 
 ## Installation
 
@@ -18,7 +26,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Request a schedule:
+
+    schedule = ScheduleScrape.fetch(:point_streak, :season => 123, :team => 456)
+
+Export the schedule to CSV:
+
+    schedule.to_csv
 
 ## Contributing
 
