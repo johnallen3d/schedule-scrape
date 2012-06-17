@@ -13,10 +13,11 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "schedule-scraper"
   gem.require_paths = ["lib"]
-  gem.version       = Schedule::Scraper::VERSION
+  gem.version       = ScheduleScraper::VERSION
 
   gem.add_dependency 'nibbler',       '~> 1.3.0'
 
+  gem.add_development_dependency 'minitest',            '~> 3.1.0'
   gem.add_development_dependency 'rake',                '~> 0.9.2'
   gem.add_development_dependency 'turn',                '~> 0.9.5'
   gem.add_development_dependency 'vcr',                 '~> 2.2.0'

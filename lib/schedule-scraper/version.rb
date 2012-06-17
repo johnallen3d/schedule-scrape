@@ -1,5 +1,3 @@
-module Schedule
-  module Scraper
-    VERSION = "0.0.1"
-  end
+module ScheduleScraper
+  VERSION = "0.1.0"
 end
