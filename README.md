@@ -34,6 +34,11 @@ Export the schedule to CSV:
 
     schedule.to_csv
 
+## TODO
+
+1. Add more export options: iCal, Google Calendar (csv)
+2. Add other schedule types: ezleagues
+
 ## Contributing
 
 1. Fork it
