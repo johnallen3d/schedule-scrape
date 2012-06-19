@@ -26,9 +26,19 @@ Or install it yourself as:
 
 ## Usage
 
+### Pointstreak Example
+
+Locate the printable version of the scheulde:
+
+1. Visit the leagues home page
+2. Click on the team in question
+3. Click the SCHEDULE link under TEAM MENU
+4. Click PRINT THIS PAGE
+
 Request a schedule:
 
-    schedule = ScheduleScrape.fetch(:point_streak, :season => 123, :team => 456)
+    url = "http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162"
+    schedule = ScheduleScrape.fetch(:point_streak, url)
 
 Export the schedule to CSV:
 

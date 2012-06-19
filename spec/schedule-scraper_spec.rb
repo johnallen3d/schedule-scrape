@@ -11,8 +11,14 @@ describe ScheduleScraper do
       end
 
       -> {
-        ScheduleScraper.fetch(:xyz)
+        ScheduleScraper.fetch(:xyz, options)
       }.must_raise ScheduleScraper::UnsupportedSchedule
+    end
+
+    it "validates the url" do
+      -> {
+        ScheduleScraper.fetch(:pointstreak, "abc")
+      }.must_raise ScheduleScraper::InvalidURL
     end
 
     it "returns a schedule" do

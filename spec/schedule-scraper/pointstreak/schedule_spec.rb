@@ -4,23 +4,6 @@ describe ScheduleScraper::Pointstreak::Schedule do
   subject() { ScheduleScraper::Pointstreak::Schedule }
   let(:options) { POINTSTREAK_OPTIONS }
 
-  it "knows the root pointstreak url" do
-    subject::POINT_STREAK_URL.must_match /pointstreak/
-  end
-
-  it "builds a valid url" do
-    url = subject.send(:source_url, "123", "456")
-    expected = "#{subject::POINT_STREAK_URL}?teamid=456&seasonid=123"
-
-    url.must_equal expected
-  end
-
-  it "fetches html from pointstreak" do
-    VCR.use_cassette('summit_summer_2012') do
-      subject.html(options[:season], options[:team])
-    end # wont_raise
-  end
-
   describe "schedule instance" do
     subject() do
       VCR.use_cassette('summit_summer_2012') do
