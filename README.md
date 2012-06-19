@@ -8,7 +8,8 @@ Supported schedule sites:
 
 Supported output formats:
 
-* CSV
+* CSV (plain dump)
+* Google Calendar formatted CSV
 
 ## Installation
 
@@ -43,6 +44,10 @@ Request a schedule:
 Export the schedule to CSV:
 
     schedule.to_csv
+
+or
+
+    schedule.to_gcal
 
 ## TODO
 
