@@ -2,6 +2,7 @@ require 'nibbler'
 require 'open-uri'
 require 'csv'
 require 'uri'
+require 'nokogiri'
 require "schedule-scraper/version"
 require "schedule-scraper/event"
 require "schedule-scraper/schedule"

@@ -16,6 +16,7 @@ Gem::Specification.new do |gem|
   gem.version       = ScheduleScraper::VERSION
 
   gem.add_dependency 'nibbler',       '~> 1.3.0'
+  gem.add_dependency 'nokogiri',      '~> 1.5.4'
 
   gem.add_development_dependency 'minitest',            '~> 3.1.0'
   gem.add_development_dependency 'rake',                '~> 0.9.2'

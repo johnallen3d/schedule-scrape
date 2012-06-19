@@ -15,6 +15,20 @@ module ScheduleScraper
         self.send(field)
       end
     end
+
+    def to_gcal
+      [
+        title,
+        start_date,
+        start_time,
+        end_date,
+        "",
+        all_day?,
+        description,
+        "",
+        private?
+      ]
+    end
   end
 end
 

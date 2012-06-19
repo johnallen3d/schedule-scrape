@@ -27,5 +27,10 @@ describe ScheduleScraper::Pointstreak::Schedule do
     it "generates a csv file" do
       subject.to_csv.must_be_instance_of String
     end
+
+    it "generates a google calendar formatted csv" do
+      p subject.to_gcal
+      subject.to_gcal.must_be_instance_of String
+    end
   end
 end
