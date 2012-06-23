@@ -10,7 +10,7 @@ Supported schedule sites:
 
 Supported output formats:
 
-* CSV (plain dump)
+* CSV (straight dump)
 * Google Calendar formatted CSV
 
 ## Installation
