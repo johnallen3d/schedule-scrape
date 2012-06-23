@@ -85,4 +85,28 @@ describe ScheduleScraper::Pointstreak::Event do
       subject.to_gcal.must_equal expected
     end
   end
+
+  describe "#to_ycal" do
+    it "provides an array ready to export to csv" do
+      expected = [
+        subject.title,
+        subject.start_date,
+        subject.start_time,
+        subject.end_date,
+        "",
+        "",
+        "",
+        subject.title,
+        "",
+        "",
+        "",
+        "",
+        "",
+        true
+      ]
+
+      p subject.to_ycal
+      subject.to_ycal.must_equal expected
+    end
+  end
 end

@@ -29,6 +29,26 @@ module ScheduleScraper
         private?
       ]
     end
+
+    # %w(name start_date start_time end_date end_time venue_name venue_location category_id description ticket_price ticket_free ticket_url event_url personal)
+    def to_ycal
+      [
+        title,
+        start_date,
+        start_time,
+        end_date,
+        "",
+        "",
+        "",
+        title,
+        "",
+        "",
+        "",
+        "",
+        "",
+        true
+      ]
+    end
   end
 end
 
