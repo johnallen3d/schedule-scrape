@@ -29,6 +29,15 @@ module ScheduleScraper
         private?
       ]
     end
+
+    def to_ical(cal)
+      cal.event do |event|
+        event.summary     description
+        event.dtstart     start_date_time
+        event.dtend       end_date_time
+        event.location    ""
+      end
+    end
   end
 end
 

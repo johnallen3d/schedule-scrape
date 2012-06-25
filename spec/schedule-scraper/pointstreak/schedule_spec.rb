@@ -29,8 +29,11 @@ describe ScheduleScraper::Pointstreak::Schedule do
     end
 
     it "generates a google calendar formatted csv" do
-      p subject.to_gcal
       subject.to_gcal.must_be_instance_of String
+    end
+
+    it "generates an ical file" do
+      subject.to_ical.must_be_instance_of RiCal::Component::Calendar
     end
   end
 end

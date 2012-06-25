@@ -31,6 +31,15 @@ module ScheduleScraper
       #   will default to one hour?
       # end
 
+      def start_date_time
+        DateTime.strptime "#{start_date} #{start_time}", '%m/%d/%y %H:%M %P'
+      end
+
+      def end_date_time
+        # default to 1 hr
+        start_date_time.to_time + 3600
+      end
+
       def all_day?
         false
       end
