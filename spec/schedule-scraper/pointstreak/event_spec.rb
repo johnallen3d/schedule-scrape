@@ -86,27 +86,13 @@ describe ScheduleScraper::Pointstreak::Event do
     end
   end
 
-  describe "#to_ycal" do
+  describe "#to_ical" do
     it "provides an array ready to export to csv" do
-      expected = [
-        subject.title,
-        subject.start_date,
-        subject.start_time,
-        subject.end_date,
-        "",
-        "",
-        "",
-        subject.title,
-        "",
-        "",
-        "",
-        "",
-        "",
-        true
-      ]
+      local_subject = subject
 
-      p subject.to_ycal
-      subject.to_ycal.must_equal expected
+      RiCal.Calendar do |cal|
+        local_subject.to_ical(cal)
+      end.must_be_instance_of RiCal::Component::Calendar
     end
   end
 end

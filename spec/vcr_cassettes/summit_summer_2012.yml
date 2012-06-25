@@ -24,9 +24,9 @@ http_interactions:
       - CP="NOI DSP CURa ADMa DEVa TAIa PSAa PSDa HISa OUR BUS IND PHY UNI COM NAV
         INT"
       expires:
-      - Mon, 18-Jun-12 03:30:00 GMT
+      - Sun, 24-Jun-12 22:22:32 GMT
       last-modified:
-      - Mon, 18 Jun 2012 03:28:00 GMT
+      - Sun, 24 Jun 2012 22:20:32 GMT
       content-type:
       - text/html; charset=UTF-8
       content-length:
@@ -36,9 +36,9 @@ http_interactions:
       vclhockey:
       - '1'
       date:
-      - Mon, 18 Jun 2012 03:28:00 GMT
+      - Sun, 24 Jun 2012 22:20:33 GMT
       x-varnish:
-      - '3214697408'
+      - '3310823725'
       age:
       - '0'
       via:
@@ -58,9 +58,9 @@ http_interactions:
         width=\"1\" height=\"1\"></td></tr>\r\n\t</table><br>\n        <table width=\"97%\"
         border=\"0\" cellspacing=\"0\" cellpadding=\"3\">\n          <tr class=\"cellTeamPlayer\">
         \n            <td>&nbsp; Team Schedule</td>\t            <td width=\"60%\"
-        align=\"right\"> gamesheet view&nbsp;<img src=\"http://static1.pointstreak.com/images/playersection/gs.gif\"
+        align=\"right\"> gamesheet view&nbsp;<img src=\"http://static2.pointstreak.com/images/playersection/gs.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\">&nbsp;&nbsp;&nbsp;
-        printable gamesheett <img src=\"http://static1.pointstreak.com/images/playersection/ss.gif\"
+        printable gamesheett <img src=\"http://static2.pointstreak.com/images/playersection/ss.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></td>          </tr>\n
         \         </table>\n\t\t\t<table width=\"97%\" border=\"0\" cellspacing=\"1\"
         cellpadding=\"3\">\n\t\t\t\t\t<tr class=\"fields\">\n\t\t\t\t\t\t\t\t\t\t\t<td
@@ -72,75 +72,75 @@ http_interactions:
         href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a><b> 8</b>\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td
         align=\"center\">Sun, Jun 03 </td>\n\t\t\t\t\t\t<td>7:45 pm</td>\n\t\t\t\t\t\t<td
         align=\"right\"><a href=\"players-boxscore.html?gameid=1947934\">final</a>\t
-        <a href=\"gamesheet_full.html?gameid=1947934\" target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/gs.gif\"
+        <a href=\"gamesheet_full.html?gameid=1947934\" target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/gs.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a></td>\n\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_manual.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_manual.gif\"
         border=\"0\"></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr class=\"lightGrey\">\n\t\t\t\t\t\t\t\t\t\t\t<td><a
         href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a><b> 1</b></td><td><a
         href=\"players-team.html?teamid=385375&seasonid=9162\">BLACK ICE</a><b> 6</b>\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td
         align=\"center\">Sun, Jun 10 </td>\n\t\t\t\t\t\t<td>7:30 pm</td>\n\t\t\t\t\t\t<td
         align=\"right\"><a href=\"players-boxscore.html?gameid=1947939\">final</a>\t
-        <a href=\"gamesheet_full.html?gameid=1947939\" target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/gs.gif\"
+        <a href=\"gamesheet_full.html?gameid=1947939\" target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/gs.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a></td>\n\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_manual.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_manual.gif\"
         border=\"0\"></td>\n\t\t\t\t\t</tr>\n\t\t\t\t<tr><td><span class=\"highlight\"></span><a
         href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a></td>\n\t\t\t\t\t\t\t<td><span
         class=\"highlight\"></span><a href=\"players-team.html?teamid=385374&seasonid=9162\">OGIES</a></td>\n\t\t\t\t\t\t\t<td
         align=\"center\">Sun, Jul 01</td><td>6:05 pm</td>\n\t\t\t\t\t\t\t<td align=\"right\"><a
         href=\"players-arenas.html?arenaid=963&seasonid=9162\">Training Rink </a>
-        <a href=\"gamesheet.html?gameid=1947947\" target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/ss.gif\"
+        <a href=\"gamesheet.html?gameid=1947947\" target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/ss.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a>\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         border=\"0\"></td>\n\t\t\t\t\t\t</tr><tr><td><span class=\"highlight\"></span><a
         href=\"players-team.html?teamid=385370&seasonid=9162\">ANGRY BEAVERS</a></td>\n\t\t\t\t\t\t\t<td><span
         class=\"highlight\"></span><a href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a></td>\n\t\t\t\t\t\t\t<td
         align=\"center\">Sun, Jul 15</td><td>7:20 pm</td>\n\t\t\t\t\t\t\t<td align=\"right\"><a
         href=\"players-arenas.html?arenaid=963&seasonid=9162\">Main Rink </a> <a href=\"gamesheet.html?gameid=1947952\"
-        target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/ss.gif\"
+        target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/ss.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a>\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         border=\"0\"></td>\n\t\t\t\t\t\t</tr><tr><td><span class=\"highlight\"></span><a
         href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a></td>\n\t\t\t\t\t\t\t<td><span
         class=\"highlight\"></span><a href=\"players-team.html?teamid=385372&seasonid=9162\">REBELS</a></td>\n\t\t\t\t\t\t\t<td
         align=\"center\">Sun, Jul 22</td><td>4:40 pm</td>\n\t\t\t\t\t\t\t<td align=\"right\"><a
         href=\"players-arenas.html?arenaid=963&seasonid=9162\">Training Rink </a>
-        <a href=\"gamesheet.html?gameid=1947969\" target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/ss.gif\"
+        <a href=\"gamesheet.html?gameid=1947969\" target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/ss.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a>\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         border=\"0\"></td>\n\t\t\t\t\t\t</tr><tr><td><span class=\"highlight\"></span><a
         href=\"players-team.html?teamid=385371&seasonid=9162\">YELLOWSNOW</a></td>\n\t\t\t\t\t\t\t<td><span
         class=\"highlight\"></span><a href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a></td>\n\t\t\t\t\t\t\t<td
         align=\"center\">Sun, Jul 29</td><td>4:40 pm</td>\n\t\t\t\t\t\t\t<td align=\"right\"><a
         href=\"players-arenas.html?arenaid=963&seasonid=9162\">Training Rink </a>
-        <a href=\"gamesheet.html?gameid=1947941\" target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/ss.gif\"
+        <a href=\"gamesheet.html?gameid=1947941\" target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/ss.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a>\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         border=\"0\"></td>\n\t\t\t\t\t\t</tr><tr><td><span class=\"highlight\"></span><a
         href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a></td>\n\t\t\t\t\t\t\t<td><span
         class=\"highlight\"></span><a href=\"players-team.html?teamid=385369&seasonid=9162\">AVERAGE
         JOES</a></td>\n\t\t\t\t\t\t\t<td align=\"center\">Sun, Aug 05</td><td>6:05
         pm</td>\n\t\t\t\t\t\t\t<td align=\"right\"><a href=\"players-arenas.html?arenaid=963&seasonid=9162\">Training
         Rink </a> <a href=\"gamesheet.html?gameid=1947974\" target=\"_blank\"><img
-        src=\"http://static1.pointstreak.com/images/playersection/ss.gif\" width=\"15\"
+        src=\"http://static2.pointstreak.com/images/playersection/ss.gif\" width=\"15\"
         height=\"15\" border=\"0\" align=\"absmiddle\"></a>\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         border=\"0\"></td>\n\t\t\t\t\t\t</tr><tr><td><span class=\"highlight\"></span><a
         href=\"players-team.html?teamid=385368&seasonid=9162\">SUMMIT</a></td>\n\t\t\t\t\t\t\t<td><span
         class=\"highlight\"></span><a href=\"players-team.html?teamid=385373&seasonid=9162\">BLADES</a></td>\n\t\t\t\t\t\t\t<td
         align=\"center\">Sun, Aug 12</td><td>7:30 pm</td>\n\t\t\t\t\t\t\t<td align=\"right\"><a
         href=\"players-arenas.html?arenaid=963&seasonid=9162\">Training Rink </a>
-        <a href=\"gamesheet.html?gameid=1947982\" target=\"_blank\"><img src=\"http://static1.pointstreak.com/images/playersection/ss.gif\"
+        <a href=\"gamesheet.html?gameid=1947982\" target=\"_blank\"><img src=\"http://static2.pointstreak.com/images/playersection/ss.gif\"
         width=\"15\" height=\"15\" border=\"0\" align=\"absmiddle\"></a>\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td><img
-        src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         border=\"0\"></td>\n\t\t\t\t\t\t</tr>\t\t\t\t<tr>\n\t\t\t\t<td align=\"right\"
         colspan=\"6\"><br><a href=\"../aboutus/pointstreakis-entrytype.html\">Terminal
-        Game/Rink - <img src=\"http://static1.pointstreak.com/images/playersection/icon_terminal.gif\"
+        Game/Rink - <img src=\"http://static2.pointstreak.com/images/playersection/icon_terminal.gif\"
         align=\"absmiddle\" border=0></a><br><a href=\"../aboutus/pointstreakis-entrytype.html\">Laptop
-        Game/Rink - <img src=\"http://static1.pointstreak.com/images/playersection/icon_laptop.gif\"
+        Game/Rink - <img src=\"http://static2.pointstreak.com/images/playersection/icon_laptop.gif\"
         align=\"absmiddle\" border=0></a><br><a href=\"../aboutus/pointstreakis-entrytype.html\">Online
-        Entry Game/Rink - <img src=\"http://static1.pointstreak.com/images/playersection/icon_manual.gif\"
+        Entry Game/Rink - <img src=\"http://static2.pointstreak.com/images/playersection/icon_manual.gif\"
         align=\"absmiddle\" border=0></a></td>\n\t\t \t\t</tr>\n\t\t</table>\n      <br>\n
         \     <br>\n\n</td>\r\n</tr>\r\n</table>\r\n</body>\r\n</html>"
     http_version: '1.1'
-  recorded_at: Mon, 18 Jun 2012 03:28:00 GMT
+  recorded_at: Sun, 24 Jun 2012 22:20:36 GMT
 recorded_with: VCR 2.2.2

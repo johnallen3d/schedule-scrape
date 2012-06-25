@@ -32,8 +32,8 @@ describe ScheduleScraper::Pointstreak::Schedule do
       subject.to_gcal.must_be_instance_of String
     end
 
-    it "generates a yahoo calendar formated csv" do
-      subject.to_ycal.must_be_instance_of String
+    it "generates an ical file" do
+      subject.to_ical.must_be_instance_of RiCal::Component::Calendar
     end
   end
 end

@@ -1,3 +1,4 @@
+require 'date'
 require 'ri_cal'
 
 module ScheduleScraper
@@ -18,20 +19,16 @@ module ScheduleScraper
       end
     end
 
-    # def to_ical
-    #   RiCal.Calendar do
-    #     event do
-    #       description "MA-6 First US Manned Spaceflight"
-    #       dtstart     DateTime.parse("2/20/1962 14:47:39")
-    #       dtend       DateTime.parse("2/20/1962 19:43:02")
-    #       location    "Cape Canaveral"
-    #       add_attendee "john.glenn@nasa.gov"
-    #       alarm do
-    #         description "Segment 51"
-    #       end
-    #     end
-    #   end
-    # end
+    def to_ical
+      # inside RiCal block events are not available
+      local_events = events
+
+      RiCal.Calendar do |cal|
+        local_events.each do |local_event|
+          local_event.to_ical(cal)
+        end
+      end
+    end
 
     def to_gcal
       headers = [

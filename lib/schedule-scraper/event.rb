@@ -30,24 +30,13 @@ module ScheduleScraper
       ]
     end
 
-    # %w(name start_date start_time end_date end_time venue_name venue_location category_id description ticket_price ticket_free ticket_url event_url personal)
-    def to_ycal
-      [
-        title,
-        start_date,
-        start_time,
-        end_date,
-        "",
-        "",
-        "",
-        title,
-        "",
-        "",
-        "",
-        "",
-        "",
-        true
-      ]
+    def to_ical(cal)
+      cal.event do |event|
+        event.summary     description
+        event.dtstart     start_date_time
+        event.dtend       end_date_time
+        event.location    ""
+      end
     end
   end
 end
