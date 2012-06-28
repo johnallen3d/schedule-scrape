@@ -12,6 +12,8 @@ Supported output formats:
 
 * CSV (straight dump)
 * Google Calendar formatted CSV
+* iCal
+* Yahoo Calendar (via iCal)
 
 ## Installation
 
@@ -41,9 +43,9 @@ Locate the printable version of the scheulde:
 Request a schedule:
 
     url = "http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162"
-    schedule = ScheduleScrape.fetch(:point_streak, url)
+    schedule = ScheduleScraper.fetch(:pointstreak, url)
 
-Export the schedule to CSV:
+Export the schedule:
 
     schedule.to_csv
 
@@ -51,10 +53,17 @@ or
 
     schedule.to_gcal
 
+or
+
+    schedule.to_ical
+
 ## TODO
 
-1. Add more export options: iCal, Google Calendar (csv)
-2. Add other schedule types: ezleagues
+1. Add other schedule types: ezleagues
+
+## Why?
+
+To scratch an itch.  I play on a couple of ice hockey teams and the rinks these sites to manage leagues and schedules.  These sites do not offer any options for exporing and I got tired of updating my schedule manually every couple of months.
 
 ## Contributing
 
