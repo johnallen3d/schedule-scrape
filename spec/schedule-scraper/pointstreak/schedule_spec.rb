@@ -35,5 +35,9 @@ describe ScheduleScraper::Pointstreak::Schedule do
     it "generates an ical file" do
       subject.to_ical.must_be_instance_of RiCal::Component::Calendar
     end
+
+    it "generates an array of hashes" do
+      subject.to_h.must_be_instance_of Array
+    end
   end
 end

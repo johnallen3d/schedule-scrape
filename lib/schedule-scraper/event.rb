@@ -38,6 +38,17 @@ module ScheduleScraper
         event.location    ""
       end
     end
+
+    def to_h
+      {
+        :title => title,
+        :start_date => start_date,
+        :start_time => start_time,
+        :end_date => end_date,
+        :all_day => all_day?,
+        :description => description
+      }
+    end
   end
 end
 

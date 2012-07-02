@@ -10,6 +10,14 @@ module ScheduleScraper
       base.extend ClassMethods
     end
 
+    def to_h
+      [].tap do |list|
+        events.each do |event|
+          list << event.to_h
+        end
+      end
+    end
+
     def to_csv
       CSV.generate do |csv|
         csv << event_class.export_fields

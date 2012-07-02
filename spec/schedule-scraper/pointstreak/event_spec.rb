@@ -95,4 +95,19 @@ describe ScheduleScraper::Pointstreak::Event do
       end.must_be_instance_of RiCal::Component::Calendar
     end
   end
+
+  describe "#to_h" do
+    it "provides a hash for export" do
+      expected = {
+        :title => subject.title,
+        :start_date => subject.start_date,
+        :start_time => subject.start_time,
+        :end_date => subject.end_date,
+        :all_day => subject.all_day?,
+        :description => subject.description
+      }
+
+      subject.to_h.must_equal expected
+    end
+  end
 end
