@@ -1,6 +1,7 @@
 # ScheduleScraper
 
 [![Build Status](https://secure.travis-ci.org/johnallen3d/schedule-scrape.png?branch=master)](http://travis-ci.org/johnallen3d/schedule-scrape)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/johnallen3d/schedule-scrape)
 
 A web calendar scraper for sites that do not provid portable (csv, i-cal etc) version.
 
