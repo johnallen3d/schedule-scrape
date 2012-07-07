@@ -8,6 +8,7 @@ A web calendar scraper for sites that do not provid portable (csv, i-cal etc) ve
 Supported schedule sites:
 
 * [PointStreak](http://pointstreak.com)
+* [EZFacility](http://www.ezfacility.com/)
 
 Supported output formats:
 
@@ -32,8 +33,6 @@ Or install it yourself as:
 
 ## Usage
 
-### Pointstreak Example
-
 Locate the printable version of the scheulde:
 
 1. Visit the leagues home page
@@ -44,7 +43,15 @@ Locate the printable version of the scheulde:
 Request a schedule:
 
     url = "http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162"
-    schedule = ScheduleScraper.fetch(:pointstreak, url)
+	schedule = ScheduleScraper.fetch(:pointstreak, url)
+    
+or
+
+	url = "http://pinevilleice.ezleagues.ezfacility.com/teams/1026121/The-Schwartz.aspx"
+	schedule = ScheduleScraper.fetch(:ezleagues, url)
+
+then
+
 
 Export the schedule:
 
@@ -60,11 +67,11 @@ or
 
 ## TODO
 
-1. Add other schedule types: ezleagues
+1. Add other schedule types
 
 ## Why?
 
-To scratch an itch.  I play on a couple of ice hockey teams and the rinks these sites to manage leagues and schedules.  These sites do not offer any options for exporing and I got tired of updating my schedule manually every couple of months.
+To scratch an itch.  I play on a couple of ice hockey teams and the rinks use these sites to manage leagues and schedules.  These sites do not offer any options for exporing and I got tired of updating my schedule manually every couple of months.
 
 ## Contributing
 
