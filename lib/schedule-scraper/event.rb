@@ -33,7 +33,13 @@ module ScheduleScraper
     end
 
     def start_time
-      time
+      begin
+        Time.parse(time)
+        time
+      rescue
+        # looks like an invalid time
+        "12:00 PM"
+      end
     end
 
     # def end_time
@@ -41,6 +47,7 @@ module ScheduleScraper
     # end
 
     def start_date_time
+
       DateTime.strptime "#{start_date} #{start_time}", '%m/%d/%y %H:%M %P'
     end
 

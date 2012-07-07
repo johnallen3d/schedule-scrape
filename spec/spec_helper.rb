@@ -6,9 +6,11 @@ require 'vcr'
 require File.expand_path(File.join(File.dirname(__FILE__), '../lib/schedule-scraper'))
 
 POINTSTREAK_OPTIONS = "http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162"
+EZ_OPTIONS = "http://pinevilleice.ezleagues.ezfacility.com/teams/1026121/The-Schwartz.aspx"
 
 class EventTest
   include ScheduleScraper::Event
+  attr_accessor :time
 
   def self.export_fields
     [:home_team, :away_team]
@@ -18,7 +20,7 @@ class EventTest
   def away_team; "away team"; end
   def date; "01/01/2013"; end
   def date_format; "%m/%d/%y"; end
-  def time; "09:00 PM"; end
+  def time; @time ||= "09:00 PM"; end
 end
 
 class ScheduleTest

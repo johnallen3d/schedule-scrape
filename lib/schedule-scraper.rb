@@ -8,6 +8,8 @@ require "schedule-scraper/event"
 require "schedule-scraper/schedule"
 require "schedule-scraper/pointstreak/event"
 require "schedule-scraper/pointstreak/schedule"
+require "schedule-scraper/ezleagues/event"
+require "schedule-scraper/ezleagues/schedule"
 
 module ScheduleScraper
   def self.fetch(type, url)
@@ -20,12 +22,14 @@ module ScheduleScraper
   def self.type_class(type)
     case type
     when :pointstreak then Pointstreak::Schedule
+    when :ezleagues then EZLeagues::Schedule
     end
   end
 
   def self.supported_schedules
     [
-      :pointstreak
+      :pointstreak,
+      :ezleagues
     ]
   end
 
