@@ -9,8 +9,8 @@ module ScheduleScraper
       element 'td:nth(4)' => :time, :with => cleaner
       element 'td:nth(5)' => :rink, :with => cleaner
 
-      def start_date
-        Date.parse(date).strftime("%m/%d/%y")
+      def date_format
+        "%m/%d/%y"
       end
     end
   end

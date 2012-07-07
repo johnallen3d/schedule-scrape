@@ -23,21 +23,5 @@ describe ScheduleScraper::Pointstreak::Schedule do
       subject.events.must_be_instance_of Array
       subject.events.length.must_equal 8
     end
-
-    it "generates a csv file" do
-      subject.to_csv.must_be_instance_of String
-    end
-
-    it "generates a google calendar formatted csv" do
-      subject.to_gcal.must_be_instance_of String
-    end
-
-    it "generates an ical file" do
-      subject.to_ical.must_be_instance_of RiCal::Component::Calendar
-    end
-
-    it "generates an array of hashes" do
-      subject.to_h.must_be_instance_of Array
-    end
   end
 end

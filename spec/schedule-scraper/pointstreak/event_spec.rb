@@ -67,47 +67,4 @@ describe ScheduleScraper::Pointstreak::Event do
       subject.private?.must_equal true
     end
   end
-
-  describe "#to_gcal" do
-    it "provides an array ready to export to csv" do
-      expected = [
-        subject.title,
-        subject.start_date,
-        subject.start_time,
-        subject.end_date,
-        "",
-        false,
-        subject.description,
-        "",
-        true
-      ]
-
-      subject.to_gcal.must_equal expected
-    end
-  end
-
-  describe "#to_ical" do
-    it "provides an array ready to export to csv" do
-      local_subject = subject
-
-      RiCal.Calendar do |cal|
-        local_subject.to_ical(cal)
-      end.must_be_instance_of RiCal::Component::Calendar
-    end
-  end
-
-  describe "#to_h" do
-    it "provides a hash for export" do
-      expected = {
-        :title => subject.title,
-        :start_date => subject.start_date,
-        :start_time => subject.start_time,
-        :end_date => subject.end_date,
-        :all_day => subject.all_day?,
-        :description => subject.description
-      }
-
-      subject.to_h.must_equal expected
-    end
-  end
 end
