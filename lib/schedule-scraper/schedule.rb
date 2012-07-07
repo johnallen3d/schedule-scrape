@@ -4,6 +4,9 @@ require 'ri_cal'
 module ScheduleScraper
   module Schedule
     module ClassMethods
+      def fetch(url)
+        parse open(url)
+      end
     end
 
     def self.included(base)

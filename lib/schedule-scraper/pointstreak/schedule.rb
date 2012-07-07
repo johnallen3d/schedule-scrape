@@ -7,10 +7,6 @@ module ScheduleScraper
         elements 'tr:not(.fields)' => :event_list, :with => Event
       end
 
-      def self.fetch(url)
-        parse open(url)
-      end
-
       def events
         list.event_list.reject { |event| event.away_team.nil? }
       end

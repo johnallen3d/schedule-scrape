@@ -4,10 +4,53 @@ module ScheduleScraper
       def export_fields
         self.rules.keys
       end
+
+      def cleaner; lambda { |value| value.text.strip }; end
     end
 
     def self.included(base)
       base.extend ClassMethods
+    end
+
+    def title
+      "#{home_team} vs. #{away_team}"
+    end
+
+    def all_day?
+      false
+    end
+
+    def description
+      title
+    end
+
+    def start_date
+      Date.parse(date).strftime(date_format)
+    end
+
+    def end_date
+      start_date
+    end
+
+    def start_time
+      time
+    end
+
+    # def end_time
+    #   will default to one hour?
+    # end
+
+    def start_date_time
+      DateTime.strptime "#{start_date} #{start_time}", '%m/%d/%y %H:%M %P'
+    end
+
+    def end_date_time
+      # default to 1 hr
+      start_date_time.to_time + 3600
+    end
+
+    def private?
+      true
     end
 
     def to_csv
