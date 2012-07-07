@@ -43,14 +43,15 @@ Locate the printable version of the scheulde:
 Request a schedule:
 
     url = "http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162"
+	schedule = ScheduleScraper.fetch(:pointstreak, url)
     
 or
 
 	url = "http://pinevilleice.ezleagues.ezfacility.com/teams/1026121/The-Schwartz.aspx"
+	schedule = ScheduleScraper.fetch(:ezleagues, url)
 
 then
 
-	schedule = ScheduleScraper.fetch(:pointstreak, url)
 
 Export the schedule:
 
