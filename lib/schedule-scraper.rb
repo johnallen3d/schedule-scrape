@@ -13,11 +13,20 @@ require "schedule-scraper/ezleagues/event"
 require "schedule-scraper/ezleagues/schedule"
 
 module ScheduleScraper
-  def self.fetch(type, url)
+  def self.fetch(type_or_url, url = nil)
+    type = url ? type_or_url : type_from_url(type_or_url)
+    url = url || type_or_url
+
     raise UnsupportedSchedule unless supported_schedules.include?(type.to_sym)
     raise InvalidURL unless valid_url?(url)
 
     type_class(type).fetch(url)
+  end
+
+  def self.type_from_url(url)
+    Config.types.each do |key, klass|
+      return key if /#{key}/ =~ url
+    end
   end
 
   def self.type_class(type)

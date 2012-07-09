@@ -15,6 +15,12 @@ describe ScheduleScraper do
       }.must_raise ScheduleScraper::UnsupportedSchedule
     end
 
+    it "supports deterministic schedule types" do
+      ScheduleScraper::Pointstreak::Schedule.stub :fetch, nil do
+        ScheduleScraper.fetch(options)
+      end
+    end
+
     it "validates the url" do
       -> {
         ScheduleScraper.fetch(:pointstreak, "abc")
