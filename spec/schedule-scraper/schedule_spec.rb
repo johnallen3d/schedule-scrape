@@ -1,7 +1,11 @@
 require File.expand_path(File.join(File.dirname(__FILE__), '../spec_helper'))
 
 describe ScheduleScraper::Schedule do
-  subject() { ScheduleTest.fetch("http://www.xyz.com") }
+  subject() { ScheduleScraper::ScheduleTest.fetch("http://www.xyz.com") }
+
+  it "adds itself to avaliable schedule types" do
+    ScheduleScraper::Config.types.keys.must_include(:scheduletest)
+  end
 
   it "converts events to a list hashes" do
     export = subject.to_h

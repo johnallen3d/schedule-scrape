@@ -4,6 +4,7 @@ require 'csv'
 require 'uri'
 require 'nokogiri'
 require "schedule-scraper/version"
+require "schedule-scraper/config"
 require "schedule-scraper/event"
 require "schedule-scraper/schedule"
 require "schedule-scraper/pointstreak/event"
@@ -20,17 +21,11 @@ module ScheduleScraper
   end
 
   def self.type_class(type)
-    case type
-    when :pointstreak then Pointstreak::Schedule
-    when :ezleagues then EZLeagues::Schedule
-    end
+    Config.types[type]
   end
 
   def self.supported_schedules
-    [
-      :pointstreak,
-      :ezleagues
-    ]
+    Config.types.keys
   end
 
   def self.valid_url?(url)

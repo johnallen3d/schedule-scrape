@@ -11,6 +11,7 @@ module ScheduleScraper
 
     def self.included(base)
       base.extend ClassMethods
+      Config.register_type base
     end
 
     def to_h

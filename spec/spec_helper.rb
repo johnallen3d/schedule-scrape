@@ -23,19 +23,21 @@ class EventTest
   def time; @time ||= "09:00 PM"; end
 end
 
-class ScheduleTest
-  include ScheduleScraper::Schedule
+module ScheduleScraper
+  class ScheduleTest
+    include ScheduleScraper::Schedule
 
-  def self.fetch(url)
-    new()
-  end
+    def self.fetch(url)
+      new()
+    end
 
-  def events
-    (1..10).collect { EventTest.new }
-  end
+    def events
+      (1..10).collect { EventTest.new }
+    end
 
-  def event_class
-    EventTest
+    def event_class
+      EventTest
+    end
   end
 end
 
