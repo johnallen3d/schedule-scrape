@@ -65,13 +65,18 @@ or
 
     schedule.to_ical
 
-## TODO
+You can also skip passing the schedule type and just supply a valid URL:
 
-1. Add other schedule types
+	url = "http://pinevilleice.ezleagues.ezfacility.com/teams/1026121/The-Schwartz.aspx"
+	schedule = ScheduleScraper.fetch(url)
 
 ## Why?
 
 To scratch an itch.  I play on a couple of ice hockey teams and the rinks use these sites to manage leagues and schedules.  These sites do not offer any options for exporing and I got tired of updating my schedule manually every couple of months.
+
+## Add Other Schedule Sypes
+
+The heart of this gem is wrapping the [nibbler](https://github.com/mislav/nibbler) gem.  If you'd like to add another schedule type you'll need to add a namespaced Schedule and Event class that knows how to parse the calendar in question.
 
 ## Contributing
 
