@@ -1,6 +1,7 @@
 require 'minitest/spec'
 require 'minitest/autorun'
 require 'turn/autorun'
+# require 'minitest/pride'
 require 'vcr'
 
 require File.expand_path(File.join(File.dirname(__FILE__), '../lib/schedule-scraper'))
