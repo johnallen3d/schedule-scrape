@@ -47,13 +47,16 @@ module ScheduleScraper
     # end
 
     def start_date_time
-
       DateTime.strptime "#{start_date} #{start_time}", '%m/%d/%y %H:%M %P'
     end
 
     def end_date_time
       # default to 1 hr
       start_date_time.to_time + 3600
+    end
+
+    def date_time_string(dt)
+      dt.strftime "%Y%m%dT%H%M%S"
     end
 
     def private?
@@ -83,8 +86,8 @@ module ScheduleScraper
     def to_ical(cal)
       cal.event do |event|
         event.summary     description
-        event.dtstart     start_date_time
-        event.dtend       end_date_time
+        event.dtstart     date_time_string(start_date_time)
+        event.dtend       date_time_string(end_date_time)
         event.location    ""
       end
     end
